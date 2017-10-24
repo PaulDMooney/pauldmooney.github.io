@@ -135,7 +135,8 @@ export default {
               loader: 'css-loader',
               options: {
                 minimize: true,
-                sourceMap: true
+                sourceMap: true,
+                modules: true
               }
             }, {
               loader: 'postcss-loader',

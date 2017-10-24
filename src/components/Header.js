@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from '../styles/header.scss'
 
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <header className={styles.header}>
         <h1>Paul Mooney</h1>
-      </div>
+      </header>
     )
   }
 }

@@ -102,7 +102,8 @@ export default {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true
+              sourceMap: true,
+              modules: true
             }
           }, {
             loader: 'postcss-loader',
