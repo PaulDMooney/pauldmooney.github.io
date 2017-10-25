@@ -5,6 +5,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
+import {styleLoaders} from './webpack.config.common';
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production'),
@@ -127,33 +128,17 @@ export default {
         ]
       },
       {
-        test: /(\.css|\.scss|\.sass)$/,
+        test: /^((?!\.global).)*(\.css|\.scss|\.sass)$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                minimize: true,
-                sourceMap: true,
-                modules: true
-              }
-            }, {
-              loader: 'postcss-loader',
-              options: {
-                plugins: () => [
-                  require('autoprefixer')
-                ],
-                sourceMap: true
-              }
-            }, {
-              loader: 'sass-loader',
-              options: {
-                includePaths: [path.resolve(__dirname, 'src', 'scss')],
-                sourceMap: true
-              }
-            }
-          ]
+          use: styleLoaders(true,true)
+        })
+      },
+      {
+        test: /\.global(\.css|\.scss|\.sass)$/,
+        exclude: /node_modules/,
+        use: ExtractTextPlugin.extract({
+          use: styleLoaders(false,true)
         })
       }
     ]

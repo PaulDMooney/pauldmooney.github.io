@@ -5,7 +5,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className={styles.header}>
-        <h1>Paul Mooney</h1>
+        <h1 className='override'>Paul Mooney</h1>
       </header>
     )
   }

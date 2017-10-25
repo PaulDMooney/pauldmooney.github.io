@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
+import {styleLoaders} from './webpack.config.common';
 
 export default {
   resolve: {
@@ -95,32 +96,14 @@ export default {
         ]
       },
       {
-        test: /(\.css|\.scss|\.sass)$/,
+        test: /\.global(\.css|\.scss|\.sass)$/,
         exclude: /node_modules/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              modules: true
-            }
-          }, {
-            loader: 'postcss-loader',
-            options: {
-              plugins: () => [
-                require('autoprefixer')
-              ],
-              sourceMap: true
-            }
-          }, {
-            loader: 'sass-loader',
-            options: {
-              includePaths: [path.resolve(__dirname, 'src', 'scss')],
-              sourceMap: true
-            }
-          }
-        ]
+        use: ['style-loader'].concat(styleLoaders(false, false))
+      },
+      {
+        test: /^((?!\.global).)*(\.css|\.scss|\.sass)$/,
+        exclude: /node_modules/,
+        use: ['style-loader'].concat(styleLoaders(true, false))
       }
     ]
   }

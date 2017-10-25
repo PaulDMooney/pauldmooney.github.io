@@ -8,10 +8,12 @@ $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, A
   --main-font-stack: $font-stack;
 }
 
+@include normalize();
+
 /* Styles */
 body {
   font: 14px var(--main-font-stack);
-  line-height: 1.4;
+  line-height: 1.2;
   color: var(--main-font-color);
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
