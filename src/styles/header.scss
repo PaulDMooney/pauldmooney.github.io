@@ -1,6 +1,13 @@
 
 .header {
-  border: 1px solid var(--main-font-color);
+  // border: 1px solid var(--main-font-color);
+  background-color: var(--theme-color-1);
+  color: var(--theme-color-2);
+  border: 1px solid var(--theme-color-1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   // position: relative;
   // z-index: 1;
   // &:before {

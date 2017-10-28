@@ -30,6 +30,7 @@
   "author": "Paul Mooney",
   "license": "MIT",
   "dependencies": {
+    "lodash-fp": "0.10.4",
     "normalize-scss": "7.0.0",
     "object-assign": "4.1.0",
     "react": "16.0.0",
