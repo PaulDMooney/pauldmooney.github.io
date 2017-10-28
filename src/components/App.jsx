@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import resume from '../data/resume'
+import Resume from './resume/Resume'
 import fp from 'lodash-fp'
 import Section from './Section'
 
@@ -14,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        {this.renderSections()}
+        <Resume resume={resume}/>
       </div>
     )
   }
