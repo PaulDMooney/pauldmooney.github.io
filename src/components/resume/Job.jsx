@@ -4,7 +4,7 @@ import fp from 'lodash-fp';
 import Project from './Project';
 
 const DATE_PATTERN = "mmmm yyyy"
-const renderProjects = fp.map((project) => <Project project={project}/>)
+const renderProjects = fp.map((project) => <Project project={project} key={project.name}/>)
 
 function Job({job}) {
   return (
@@ -32,7 +32,7 @@ const renderDateRange = (fromDate, toDate) => {
 
   if (toDate) {
     const toDateStr = dateformat(toDate, DATE_PATTERN);
-    dateRangeString += ` - {toDateStr}`;
+    dateRangeString += ` - ${toDateStr}`;
   } else {
     dateRangeString += " - Present";
   }

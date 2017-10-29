@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Section from './Section';
+import Section from './Section.jsx';
 
 describe('<Section>', () => {
   it("Should display the given title", ()=> {

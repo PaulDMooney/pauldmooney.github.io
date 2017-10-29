@@ -1,9 +1,36 @@
 export default {
 
-  skills: {
-
-  },
+  skills: [
+    {
+      name: "Java 8",
+      rating: 0.9
+    },
+    {
+      name: "Spring",
+      rating: 0.8
+    },
+    {
+      name: "NodeJS",
+      rating: 0.6
+    }
+  ],
   education: {
+    institutes: [
+      {
+        company: "McMaster University",
+        from: new Date(2000,8),
+        to: new Date(2005, 4),
+        projects: [{
+          name: "B. Sc. Honours Computer Science",
+          description: `Study of advanced data structures and algorithms, computer architecture, advanced programming
+          paradigms, algorithm analysis, abstract data types, recursion, modularization, object-oriented
+          modelling and design, fault tolerance and reliability, design specifications and implementation,
+          operating system concepts and design, advanced operating systems for distributed systems,
+          compiler construction, and database schema design.`
+        }]
+      }
+
+    ]
 
   },
   experience: {
