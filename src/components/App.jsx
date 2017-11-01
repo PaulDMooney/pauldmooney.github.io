@@ -4,6 +4,7 @@ import resume from '../data/resume'
 import Resume from './resume/Resume'
 import fp from 'lodash-fp'
 import Section from './Section'
+import styles from '../styles/app.scss';
 
 // const map = fp.map.convert({cap:false});
 const sectionRenderer = fp.map((section) => {
@@ -13,9 +14,13 @@ const sectionRenderer = fp.map((section) => {
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header/>
+      <div className={styles.main}>
+        <div className={styles.head}>
+        <Header />
+        </div>
+        <div className={styles.content}>
         <Resume resume={resume}/>
+        </div>
       </div>
     )
   }
