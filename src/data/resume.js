@@ -10,8 +10,32 @@ export default {
       rating: 0.8
     },
     {
+      name: "Javascript / ES6 / ES2017",
+      rating: 0.75,
+    },
+    {
       name: "NodeJS",
       rating: 0.6
+    },
+    {
+      name: "Vagrant",
+      rating: 0.8
+    },
+    {
+      name: "Ansible",
+      rating: 0.8
+    },
+    {
+      name: "CSS",
+      rating: 0.9
+    },
+    {
+      name: "TypeScript",
+      rating: 0.6
+    },
+    {
+      name: "Kotlin",
+      rating: 0.5
     }
   ],
   education: {

@@ -7,9 +7,11 @@ const DATE_PATTERN = "mmmm yyyy"
 const renderProjects = fp.map((project) => <Project project={project} key={project.name}/>)
 
 function Job({job}) {
+  const topLine = [job.company, job.title].filter((val) => val).join(" - ");
+
   return (
     <div>
-      <h3>{job.company} - {job.title}</h3>
+      <h3>{topLine}</h3>
       {renderDateRange(job.from, job.to)}
       {(() => {
         if (job.description) {

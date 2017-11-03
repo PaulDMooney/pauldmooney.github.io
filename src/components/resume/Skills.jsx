@@ -7,9 +7,9 @@ const renderSkills = fp.map((skill) => (
     <div>
       {skill.name}
     </div>
-    <div>
+    {/* <div>
       <Rating rating={skill.rating}/>
-    </div>
+    </div> */}
   </div>
 ));
 
