@@ -5,7 +5,13 @@ class Header extends React.Component {
   render() {
     return (
       <header className={styles.header}>
-        <h1 className='override'>Paul Mooney</h1>
+        <div className={styles.content}>
+          <h1>Paul Mooney</h1>
+          <ul>
+            <li>Software Developer</li>
+            <li>Technical Lead</li>
+          </ul>
+        </div>
       </header>
     )
   }

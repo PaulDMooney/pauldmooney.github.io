@@ -1,10 +1,7 @@
-
+@import "variables";
 
 .main {
 
-  $grid-template-columns-layout: "[full-start] minmax(1rem,1fr)\
-  [main-start] minmax(0,var(--container-width)) [main-end]\
-  minmax(1rem,1fr)[full-end]";
   display: grid;
   width: 100%;
   // grid-template: "head head head"

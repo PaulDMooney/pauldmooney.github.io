@@ -1,13 +1,17 @@
+@import "variables";
 
 .header {
-  // border: 1px solid var(--main-font-color);
+
   background-color: var(--theme-color-1);
   color: var(--theme-color-2);
   border: 1px solid var(--theme-color-1);
-  height: 100vh;
-  display: flex;
+  height: 100%;
   align-items: center;
-  justify-content: center;
+
+  // Have similar grid to parent so children align while this has a breakout background
+  display: grid;
+  grid-template-columns: #{$grid-template-columns-layout};
+
   // position: relative;
   // z-index: 1;
   // &:before {
@@ -23,7 +27,21 @@
   //   z-index: -1;
   //   background-repeat: no-repeat;
   // }
-  h1 {
-    width:var(--container-width);
+}
+
+.content {
+  grid-column: main;
+
+  ul {
+    list-style: none;
+    li {
+      display: inline;
+
+      &:first-child {
+        &::after {
+          content:"|";
+        }
+      }
+    }
   }
 }
