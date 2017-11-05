@@ -31,6 +31,8 @@
 
 .content {
   grid-column: main;
+  position: sticky;
+  top: 0.5rem;
   h1 {
     margin: 0;
   }

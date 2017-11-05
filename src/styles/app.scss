@@ -12,6 +12,8 @@
 
 .head {
   grid-column: full;
+  position: sticky;
+  top: calc(-100vh + 5rem);
   // grid-area: head;
 }
 
