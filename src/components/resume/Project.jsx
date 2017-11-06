@@ -1,23 +1,29 @@
 import React from 'react';
 import fp from 'lodash-fp';
 
+const renderResponsibilityItems = () => {
+  let counter = 0;
+  return fp.map((responsibility) => (<li key={counter++}>{responsibility}</li>))
+}
 
 
 function Project({project}) {
 
   let counter = 0;
-  const renderResponsibilities =
-    fp.map((responsibility) => (<li key={project.name + counter++}>{responsibility}</li>))
+
+  let responsibilityList;
+  if (project.responsibilities) {
+    responsibilityList = (<ul>{renderResponsibilityItems()(project.responsibilities)}</ul>)
+  }
 
   return (
     <div>
       <h4>{project.name}</h4>
       <p>{project.description}</p>
-      <ul>
-        {renderResponsibilities(project.responsibilities)}
-      </ul>
+      {responsibilityList}
     </div>
   )
 }
 
 export default Project;
+export {renderResponsibilityItems}

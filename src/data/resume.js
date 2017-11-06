@@ -26,6 +26,18 @@ export default {
       rating: 0.8
     },
     {
+      name: "Docker",
+      rating: 0.6
+    },
+    {
+      name: "Terraform",
+      rating: 0.4
+    },
+    {
+      name: "Gradle",
+      rating: 0.9
+    },
+    {
       name: "CSS",
       rating: 0.9
     },
@@ -42,6 +54,7 @@ export default {
     institutes: [
       {
         company: "McMaster University",
+        location: "Hamilton, Ontario",
         from: new Date(2000,8),
         to: new Date(2005, 4),
         projects: [{
@@ -62,6 +75,7 @@ export default {
       {
         title: "Technical Lead",
         company: "Architech",
+        location: "Toronto, Ontario",
         from: new Date(2014,8),
         description: "",
         projects: [
@@ -130,14 +144,109 @@ export default {
       {
         title: "Java EE Developer / Team Lead",
         company: "QuickPlay Media",
+        location: "Toronto, Ontario",
         from: new Date(2008, 2),
-        to: new Date(2014, 8)
+        to: new Date(2014, 8),
+        projects: [
+          {
+            name: "IndyCar Mobile",
+            description: `Verizon sponsored IndyCar Mobile application is a companion app for Android and iOS that
+includes IndyCar related news, photos, videos, tweets, driver and event statistics, live video feeds,
+as well as a live interactive leaderboard.`,
+            responsibilities: [
+              `Requirements gathering, Planning, estimating, and story preparations.`,
+              `Designing aspects of, or assisting in designs of server-side systems such as data collection,
+administration consoles, live leaderboard protocol, web services, and push notifications.`,
+              `Interfacing with customer regularly for design and troubleshooting topics.`,
+              `Developing and testing server-side components.`,
+              `Designed protocol to allow time synchronization between live video and live leaderboard.`,
+              `Developed image resizing web service for simpler, more efficient, image handling.`
+            ]
+          },
+          {
+            name: "AT&T Uverse",
+            description: "TV Uverse OTT offering by AT&amp;T for mobile subscribers.",
+            responsibilities: [
+              `Refactored video transcoding platform workflow to reuse transcoded variants of a video
+asset for multiple delivery types and DRM solutions.`,
+              `Lead team to develop live streaming delivery solution with DRM.`,
+              `Designed and lead team to develop transcoding optimizations for 32-core CPU hardware.`
+            ]
+          },
+          {
+            name: "Samsung MediaHub",
+            description: `MediaHub is a central application to Samsung smart TVs. QuickPlay is contracted to provide
+transcoding services of video content to be delivered to MediaHub. This is done using its
+horizontally scalable video transcoding platform called Media Processor.`,
+            responsibilities: [
+              `Added Service Level Agreement (SLA) tracking and reporting capabilities, as well as UIs to
+Media Processor to follow video assets that may or may not finish transcoding within a set
+time period.`,
+              `Designed load balanced work flow to ensure fair distribution of video transcoding time to all
+content providers as well as prioritizing assets based on their type: Movie, same day TV
+show, next day TV show.`
+            ]
+          },
+          {
+            name: "Internal",
+            responsibilities:[
+              `Developed administrative UI for the core platform used in all of QuickPlay's managed
+services. UI was created to be extensible to allow for any enhancements and customizations
+required in a customized managed service project.`,
+              `Maintained and developed video transcoding platform. Particularly applying transcoding
+optimizations, adapting the platform's grid aspects to use map-reduce pattern, and enhancing
+build system to ease development and reduce build-deploy- test cycle time.`,
+              `Developed UI to apply slates or blackouts to live channels. Includes embedded video
+preview.`,
+              `Review resumes, conduct interviews, and assist in creaaating standardization in the hiring
+process.`,
+              `Mentor new hires in company development practices and core projects.`
+            ]
+          }
+        ]
       },
       {
         title: "Java EE/Web Developer",
         company: "Adjuvant Informatics",
+        location: "Flamborough, Ontario",
         from: new Date(2006,1),
         to: new Date(2008,2),
+        description: `Software firm specializing in the clinical anaesthetic and acute pain management domains.
+Adjuvant Informatics is a Java shop which utilizes Agile and Test First development practices.`,
+        responsibilities: [
+          `Wrote a hospital tracking systems (HL7) interface for Adjuvant’s Acute Pain Service
+Manager product. Deployed in Sunnybrook, Hamilton Health Sciences, and St. Joseph's
+Hospital.`,
+          `Created SOAP web service and application which receives information and events from
+remote PCA Infusion pumps, and pushes data to client web browsers using Flex Data
+Management Services in order to update charts displayed in Flash.`,
+          `Created a data driven questionnaire with a web interface used for Pre-Operative Assessment.`,
+          `Used Hibernate, Struts, AJAX (DWR and YUI) and service oriented design pattern to create
+a system for tracking information regarding notable incidents in hospitals, as well as any
+follow up meetings, recommendations, and root cause analyses.`,
+          `Aided in the design of the domain model shared among current and future web application
+modules in the Clinical Anaesthesia Information System suite.`,
+          `Created a hybrid authentication and authorization infrastructure using JNDI/LDAP and
+JDBC security realms for the preceding web applications.`,
+          `Aided in the sprint planning process, particularly devising the next sprints list of
+stories/tasks and putting time estimates on them.`
+        ]
+      },
+      {
+        title: "Java/Web Developer (Contract)",
+        company: "Open Sky Solutions",
+        location: "Hamilton, Ontario",
+        from: new Date(2005,6),
+        to: new Date(2005,11),
+        description: "Software firm dealing mainly in contracts for Renaissance Humanist projects.",
+        responsibilities: [
+          `In a team, developed York University’s PACE site using the Apache Cocoon framework.`,
+          `Wrote converter to convert various sources of information into database entries for the
+PACE site. This includes parsing Access database XML, Excel XML, and various volumes
+of Word Document formatted texts.`,
+          `Recreated company website using Cocoon and XSL, so that a WML version was supported
+using the same source XHTML for content as the desktop version of the site.`
+        ]
       }
     ]
   }
