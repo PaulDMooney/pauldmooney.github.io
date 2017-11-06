@@ -2,53 +2,152 @@ export default {
 
   skills: [
     {
-      name: "Java 8",
-      rating: 0.9
+      category: "Java",
+      skills: [
+        {
+          name: "Java 8",
+          rating: 0.9
+        },
+        {
+          name: "Spring / Spring Boot",
+          rating: 0.8
+        },
+        {
+          name: "Spring Cloud"
+        },
+        {
+          name: "Gradle",
+          rating: 0.9
+        },
+        {
+          name: "Maven"
+        },
+        {
+          name: "Kotlin",
+          rating: 0.5
+        },
+        {
+          name: "Tomcat"
+        },
+        {
+          name: "Oracle Weblogic"
+        },
+        {
+          name: "JPA"
+        },
+        {
+          name: "Hibernate"
+        },
+        {
+          name: "JUnit"
+        },
+        {
+          name: "Serenity"
+        },
+        {
+          name: "JBehave"
+        },
+        {
+          name: "Mockito"
+        }
+      ]
     },
     {
-      name: "Spring",
-      rating: 0.8
+      category: "JavaScript",
+      skills: [
+        {
+          name: "JavaScript / ES6 / ES2017",
+          rating: 0.75,
+        },
+        {
+          name: "NodeJS",
+          rating: 0.6
+        },
+        {
+          name: "TypeScript",
+          rating: 0.6
+        },
+        {
+          name: "React"
+        },
+        {
+          name: "Vue.js"
+        },
+        {
+          name: "Webpack"
+        },
+        {
+          name: "Gulp"
+        }
+      ]
     },
     {
-      name: "Javascript / ES6 / ES2017",
-      rating: 0.75,
+      category: "HTML",
+      skills:[
+        {
+          name: "HTML5"
+        },
+        {
+          name: "CSS"
+        },
+        {
+          name: "Sass / SCSS"
+        },
+        {
+          name: "Less"
+        },
+        {
+          name: "CSS Modules"
+        }
+      ]
     },
     {
-      name: "NodeJS",
-      rating: 0.6
+      category: "DevOps",
+      skills: [
+        {
+          name: "Vagrant",
+          rating: 0.8
+        },
+        {
+          name: "Ansible",
+          rating: 0.8
+        },
+        {
+          name: "Docker",
+          rating: 0.6
+        },
+        {
+          name: "Terraform",
+          rating: 0.4
+        }
+      ]
     },
     {
-      name: "Vagrant",
-      rating: 0.8
+      category: "Operating Systems",
+      skills: [
+        {
+          name: "RedHat Enterprise Linux / Centos"
+        },
+        {
+          name: "Ubuntu"
+        }
+      ]
     },
     {
-      name: "Ansible",
-      rating: 0.8
-    },
-    {
-      name: "Docker",
-      rating: 0.6
-    },
-    {
-      name: "Terraform",
-      rating: 0.4
-    },
-    {
-      name: "Gradle",
-      rating: 0.9
-    },
-    {
-      name: "CSS",
-      rating: 0.9
-    },
-    {
-      name: "TypeScript",
-      rating: 0.6
-    },
-    {
-      name: "Kotlin",
-      rating: 0.5
+      category: "Databases",
+      skills: [
+        {
+          name: "Oracle RDBMS"
+        },
+        {
+          name: "MySQL"
+        },
+        {
+          name: "PostgreSQL"
+        }
+      ]
     }
+
   ],
   education: {
     institutes: [

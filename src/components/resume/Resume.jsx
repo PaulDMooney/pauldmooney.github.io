@@ -7,7 +7,7 @@ function Resume({resume}) {
   return (
     <div>
       <h2>Technical Skills</h2>
-      <Skills skills={resume.skills}/>
+      <Skills skillCategories={resume.skills}/>
 
       <h2>Work Experience</h2>
       <Experience experience={resume.experience}/>
