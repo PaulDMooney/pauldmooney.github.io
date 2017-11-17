@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from './Header'
-import resume from '../data/resume'
+import resumeData from '../data/resume'
 import Resume from './resume/Resume'
+import {resumeSections} from './resume/Resume'
 import fp from 'lodash-fp'
 import Section from './Section'
 import styles from '../styles/app.scss';
+import Navigation from './Navigation';
 
 // const map = fp.map.convert({cap:false});
 const sectionRenderer = fp.map((section) => {
@@ -12,21 +14,28 @@ const sectionRenderer = fp.map((section) => {
 });
 
 class App extends React.Component {
+
   render() {
+
+    const menuLinks = resumeSections.map((item) => {return {name: item.title, link: `#${item.id}`}})
+
     return (
       <div className={styles.main}>
         <div className={styles.head}>
         <Header />
         </div>
+        <div className={styles.navigation}>
+          <Navigation navItems={menuLinks}/>
+        </div>
         <div className={styles.content}>
-        <Resume resume={resume}/>
+        <Resume resume={resumeData}/>
         </div>
       </div>
     )
   }
 
   renderSections() {
-    return sectionRenderer(resume.sections)
+    return sectionRenderer(resumeData.sections)
 
   }
 }

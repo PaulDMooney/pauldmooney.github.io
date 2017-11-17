@@ -17,6 +17,10 @@
   // grid-area: head;
 }
 
+.navigation {
+  grid-column: main;
+}
+
 .content {
   grid-column: main;
   // grid-area: content;

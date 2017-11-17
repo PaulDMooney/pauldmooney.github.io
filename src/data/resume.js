@@ -149,26 +149,6 @@ export default {
     }
 
   ],
-  education: {
-    institutes: [
-      {
-        company: "McMaster University",
-        location: "Hamilton, Ontario",
-        from: new Date(2000,8),
-        to: new Date(2005, 4),
-        projects: [{
-          name: "B. Sc. Honours Computer Science",
-          description: `Study of advanced data structures and algorithms, computer architecture, advanced programming
-          paradigms, algorithm analysis, abstract data types, recursion, modularization, object-oriented
-          modelling and design, fault tolerance and reliability, design specifications and implementation,
-          operating system concepts and design, advanced operating systems for distributed systems,
-          compiler construction, and database schema design.`
-        }]
-      }
-
-    ]
-
-  },
   experience: {
     jobs: [
       {
@@ -348,5 +328,25 @@ using the same source XHTML for content as the desktop version of the site.`
         ]
       }
     ]
+  },
+  education: {
+    institutes: [
+      {
+        company: "McMaster University",
+        location: "Hamilton, Ontario",
+        from: new Date(2000,8),
+        to: new Date(2005, 4),
+        projects: [{
+          name: "B. Sc. Honours Computer Science",
+          description: `Study of advanced data structures and algorithms, computer architecture, advanced programming
+          paradigms, algorithm analysis, abstract data types, recursion, modularization, object-oriented
+          modelling and design, fault tolerance and reliability, design specifications and implementation,
+          operating system concepts and design, advanced operating systems for distributed systems,
+          compiler construction, and database schema design.`
+        }]
+      }
+
+    ]
+
   }
 }
