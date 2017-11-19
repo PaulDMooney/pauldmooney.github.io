@@ -15,6 +15,7 @@ class Navigation extends React.Component {
         offset={-100}
         activeClass={style.active}
         spy={true}
+        className={style['nav-item']}
         >{navItem.name}</Scroll.Link>)
     )
 
