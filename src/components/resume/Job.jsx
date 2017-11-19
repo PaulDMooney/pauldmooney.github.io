@@ -33,7 +33,6 @@ function Job({job}) {
 export default Job;
 
 const renderDateRange = (fromDate, toDate) => {
-  console.log("Rende Date Range", fromDate, toDate)
   let dateRangeString = "";
   if (fromDate) {
     dateRangeString += dateformat(fromDate, DATE_PATTERN);

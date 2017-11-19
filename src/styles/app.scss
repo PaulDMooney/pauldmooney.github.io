@@ -17,6 +17,12 @@
   // grid-area: head;
 }
 
+.navigation {
+  grid-column: main;
+  position: sticky;
+  top: 5rem;
+}
+
 .content {
   grid-column: main;
   // grid-area: content;
