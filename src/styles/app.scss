@@ -19,6 +19,8 @@
 
 .navigation {
   grid-column: main;
+  position: sticky;
+  top: 5rem;
 }
 
 .content {

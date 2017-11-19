@@ -2,7 +2,9 @@ import React from 'react'
 import Experience from './Experience'
 import Skills from './Skills'
 import Education from './Education'
-import ScrollableAnchor from 'react-scrollable-anchor'
+import Scroll from 'react-scroll'
+
+const Element = Scroll.Element;
 
 const resumeSections = [
   {
@@ -26,10 +28,10 @@ function Resume({resume}) {
 
   const renderResumeSections = resumeSections.map((section) => (
     <section key={section.title}>
-      <ScrollableAnchor id={`${section.id}`}>
+      <Element name={section.id} >
         <h2>{section.title}</h2>
         {section.render(resume)}
-      </ScrollableAnchor>
+      </Element>
     </section>
   ))
 

@@ -17,7 +17,7 @@ class App extends React.Component {
 
   render() {
 
-    const menuLinks = resumeSections.map((item) => {return {name: item.title, link: `#${item.id}`}})
+    const menuLinks = resumeSections.map((item) => {return {name: item.title, link: `${item.id}`}})
 
     return (
       <div className={styles.main}>
