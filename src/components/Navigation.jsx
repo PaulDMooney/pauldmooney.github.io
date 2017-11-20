@@ -1,6 +1,6 @@
 import React from 'react';
 import Scroll from 'react-scroll';
-import style from '../styles/navigation.scss';
+import style from './Navigation.scss';
 
 class Navigation extends React.Component {
 
@@ -16,6 +16,9 @@ class Navigation extends React.Component {
         activeClass={style.active}
         spy={true}
         className={style['nav-item']}
+        smooth={true}
+        duration={250}
+        hashSpy={true}
         >{navItem.name}</Scroll.Link>)
     )
 

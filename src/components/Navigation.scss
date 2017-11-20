@@ -5,6 +5,8 @@
   width:100%;
   color: var(--theme-color-2);
   text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.25s ease;
 }
 
 .active {

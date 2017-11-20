@@ -5,7 +5,7 @@ import Resume from './resume/Resume'
 import {resumeSections} from './resume/Resume'
 import fp from 'lodash-fp'
 import Section from './Section'
-import styles from '../styles/app.scss';
+import styles from './App.scss';
 import Navigation from './Navigation';
 
 // const map = fp.map.convert({cap:false});
